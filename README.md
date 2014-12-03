@@ -7,3 +7,5 @@ This is using the long term support ubuntu server os:http://odroid.in/ubuntu_14.
 Once the new OS has come up then the idea is to wget this repository script to initialise the OS.
 
 wget https://raw.githubusercontent.com/sihorton/odroid-host-init/master/odroid-host-init.sh
+chmod +x odroid-host-init.sh
+sudo ./odroid-host-init.sh
