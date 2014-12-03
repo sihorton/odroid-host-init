@@ -20,3 +20,7 @@ wget http://ftp.de.debian.org/debian/pool/main/d/docker.io/docker.io_1.3.2~dfsg1
 
 sudo dpkg -i docker.io_1.3.2~dfsg1-1_armhf.deb init-system-helpers_1.22_all.deb libdevmapper1.02.1_1.02.90-2_armhf.deb dmsetup_1.02.90-2_armhf.deb 
 
+cd ..
+rm -rf deb_temp/
+echo "docker should now be installed"
+docker version
