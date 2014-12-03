@@ -28,11 +28,6 @@ chmod +x /etc/profile.d/host.sh
 sudo apt-get remove openssh-server
 sudo apt-get install -y dropbear
 
-#install samba
-sudo apt-get install -y samba samba-common python-glade2 system-config-samba
-
-#access windows shares / nfs
-sudo apt-get install -y cifs-utils
 
 cd ..
 rm -rf deb_temp/
