@@ -1,6 +1,8 @@
 sudo apt-get install docker.io
 
 #docker.io in standard repos does not work on arm so download and install required packages from debian instead.
+mkdir deb_temp
+cd deb_temp
 
 #install a newer perl
 wget http://ftp.de.debian.org/debian/pool/main/p/perl/perl-modules_5.20.1-3_all.deb
@@ -22,8 +24,6 @@ sudo dpkg -i docker.io_1.3.2~dfsg1-1_armhf.deb init-system-helpers_1.22_all.deb 
 echo "odroid server" >> /etc/profile.d/host.sh
 chmod +x /etc/profile.d/host.sh
 
-cd ..
-
 #I prefer dropbear so swap out openssh
 sudo apt-get remove openssh-server
 sudo apt-get install -y dropbear
@@ -34,6 +34,8 @@ sudo apt-get install -y samba samba-common python-glade2 system-config-samba
 #access windows shares / nfs
 sudo apt-get install -y cifs-utils
 
+cd ..
+rm -rf deb_temp/
 #for odroid only
 wget http://builder.mdrjr.net/tools/kernel-update.sh
 
