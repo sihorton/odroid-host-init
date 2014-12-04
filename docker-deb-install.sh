@@ -1,4 +1,4 @@
-sudo apt-get install docker.io
+sudo apt-get -y install docker.io
 
 #docker.io in standard repos does not work on arm so download and install required packages from debian instead.
 mkdir deb_temp
