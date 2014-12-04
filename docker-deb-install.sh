@@ -22,5 +22,6 @@ sudo dpkg -i docker.io_1.3.2~dfsg1-1_armhf.deb init-system-helpers_1.22_all.deb 
 
 cd ..
 rm -rf deb_temp/
+echo " "
 echo "docker should now be installed"
 docker version
